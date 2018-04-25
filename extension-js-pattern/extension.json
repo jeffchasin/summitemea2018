@@ -1,0 +1,39 @@
+{
+  "displayName": "Hotjar",
+  "name": "hotjar-js",
+  "version": "1.0.0",
+  "iconPath": "resources/icons/hotjar.svg",
+  "description": "Hotjar example extension. Forked from Twitter UWT, in a friendly fashion.",
+  "author": {
+    "name": "Adobe Systems Incorporated",
+    "url": "http://developer.adobelaunch.com"
+  },
+  "viewBasePath": "src/view/",
+  "actions": [
+    {
+      "displayName": "Load Hotjar Code",
+      "name": "load-hotjar-code",
+      "libPath": "src/lib/actions/loadTrackingCode.js",
+      "schema": {
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "type": "object",
+        "properties": {}
+      }
+    }
+  ],
+  "configuration": {
+    "viewPath": "configuration/configuration.html",
+    "schema": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "properties": {
+        "hjid": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "additionalProperties": false,
+      "required": ["hjid"]
+    }
+  }
+}

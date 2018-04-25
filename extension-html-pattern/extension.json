@@ -1,0 +1,37 @@
+{
+  "displayName": "Hotjar",
+  "name": "hotjar-html",
+  "version": "1.0.0",
+  "description": "Hotjar example extension. Forked from Hello World, in a friendly fashion.",
+  "iconPath": "resources/icons/hotjar.svg",
+  "author": {
+    "name": "Adobe Systems Incorporated",
+    "url": "http://developer.adobelaunch.com"
+  },
+  "viewBasePath": "src/view/",
+  "configuration": {
+    "viewPath": "configuration/configuration.html",
+    "schema": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "properties": {
+        "hjid": {
+          "type": "number",
+          "minLength": 1
+        }
+      },
+      "required": ["hjid"],
+      "additionalProperties": false
+    }
+  },
+  "actions": [{
+    "name": "load-hotjar-code",
+    "displayName": "Load Hotjar Code",
+    "libPath": "src/lib/actions/loadTrackingCode.js",
+    "schema": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "properties": {}
+    }
+  }]
+}

@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Configuration</title>
+  <link rel="stylesheet" href="../global.css">
+</head>
+<body>
+  <form>
+    <label>
+      <span class="label">Hotjar ID</span>
+      <input id="hjid">
+    </label>
+  </form>
+
+  <script src="//assets.adobedtm.com/activation/reactor/extensionbridge/extensionbridge.min.js"></script>
+  <script>
+    window.extensionBridge.register({
+      init: function(info) {
+        document.getElementById('hjid').value = (info.settings && info.settings.hjid) || '';
+      },
+
+      getSettings: function() {
+        return {
+          hjid: Number(document.getElementById('hjid').value)
+        };
+      },
+
+      validate: function() {
+        var hjidField = document.getElementById('hjid');
+        var hjid = Number(hjidField.value);
+        hjidField.invalid = isNaN(hjid) || hjid < 1;
+        return !hjidField.invalid;
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+{
+  "name": "hotjar-html-extension",
+  "version": "1.0.0",
+  "description": "Hotjar example extension. Forked from Hello World, in a friendly fashion.",
+  "author": {
+    "name": "Adobe Systems Incorporated",
+    "url": "http://developer.adobelaunch.com"
+  },
+  "scripts": {
+    "sandbox": "reactor-sandbox",
+    "scaffold": "reactor-scaffold"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:jeffchasin/summitemea2018.git"
+  },
+  "devDependencies": {
+    "@adobe/reactor-sandbox": "^8.4.0",
+    "@adobe/reactor-scaffold": "^1.1.12",
+    "@adobe/reactor-turbine": "^25.1.0"
+  },
+  "license": "ISC"
+}

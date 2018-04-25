@@ -1,0 +1,18 @@
+body {
+  padding: 1rem;
+}
+
+.data-element-button {
+  margin: 0 .5rem;
+}
+
+.error label,
+.error .pure-form-message-inline {
+  color: #cc0033;
+}
+
+.error input[type=text] {
+  background-color: #fce4e4;
+  border: 1px solid #cc0033;
+  outline: none;
+}

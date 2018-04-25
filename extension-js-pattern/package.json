@@ -1,0 +1,25 @@
+{
+  "name": "hotjar-js-extension",
+  "version": "1.0.0",
+  "description": "Hotjar example extension. Forked from Twitter UWT, in a friendly fashion.",
+  "scripts": {
+    "scaffold": "reactor-scaffold",
+    "sandbox": "reactor-sandbox",
+    "package": "reactor-packager"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:jeffchasin/summitemea2018.git"
+  },
+  "license": "Apache-2.0",
+  "author": {
+    "name": "Adobe Systems Incorporated",
+    "url": "http://developer.adobelaunch.com"
+  },
+  "devDependencies": {
+    "@adobe/reactor-packager": "^2.6.2",
+    "@adobe/reactor-sandbox": "^8.4.0",
+    "@adobe/reactor-scaffold": "^1.1.12",
+    "@adobe/reactor-turbine": "^25.1.0"
+  }
+}
