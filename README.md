@@ -5,7 +5,7 @@ This is a Hotjar extension for Launch written using two different approaches. Ei
 ## Upstream Repos
 
 * The `extension-html-pattern` example follows the [Hello World](https://github.com/Adobe-Marketing-Cloud/reactor-helloworld-extension) extension pattern.
-* The `extension-js-pattern` example follows the [Twitter UWT](https://github.com/dompuiu/extension-twitteruwt) extension pattern.
+* The `extension-js-pattern` example follows the [Twitter UWT](https://github.com/dompuiu/extension-twitteruwt) extension pattern. Props and thanks to [Serban](https://github.com/dompuiu) for the heavy lifting and smarts.
 
 ## Resources
 
