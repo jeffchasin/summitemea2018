@@ -17,5 +17,5 @@ For more information regarding Launch extension development, please visit our [d
 1. Install [node.js](https://nodejs.org/). Make sure you have at least [npm v4.0](https://docs.npmjs.com/getting-started/installing-node#updating-npm) installed.
 2. Clone this repository.
 3. Navigate into the appropriate project directory 
-4. The project folders already contain `nod_modules`, no need to run `npm install` unless you wish to update package versions.
+4. The project folders already contain `node_modules`, no need to run `npm install` unless you wish to update package versions.
 5. Start the sandbox task by running `npm run sandbox` from the appropriate folder.
