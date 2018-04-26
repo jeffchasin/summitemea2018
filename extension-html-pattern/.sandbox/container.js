@@ -21,7 +21,7 @@ module.exports = {
       // ],
       actions: [
         {
-          modulePath: 'hotjar-html/src/lib/actions/loadTrackingCode.js',
+          modulePath: 'hotjar/src/lib/actions/loadHotjarCode.js',
           settings: {
           }
         }
