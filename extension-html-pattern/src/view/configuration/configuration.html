@@ -1,29 +1,45 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>Extension Configuration</title>
-  </head>
-  <body>
-    Extension Configuration Template
 
-    <script src="https://assets.adobedtm.com/activation/reactor/extensionbridge/extensionbridge.min.js"></script>
-    <script>
-      window.extensionBridge.register({
-        init: function(info) {
-          if (info.settings) {
-            // TODO Populate form values from persisted settings.
-          }
-        },
+<head>
+  <meta charset="UTF-8">
+  <title>Extension Configuration</title>
+</head>
 
-        getSettings: function() {
-          // TODO Return settings object from form values.
-        },
+<body>
+  <form>
+    <label>
+      <span>Hotjar ID</span>
+      <input id="hjid">
+    </label>
+  </form>
 
-        validate: function() {
-          // TODO Return whether settings are valid.
+  <script src="https://assets.adobedtm.com/activation/reactor/extensionbridge/extensionbridge.min.js"></script>
+  <script>
+    window.extensionBridge.register({
+      init: function (info) {
+        if (info.settings) {
+          // TODO Populate form values from persisted settings.
+          document.getElementById('hjid').value = (info.settings.hjid) || '';
         }
-      });
-    </script>
-  </body>
+      },
+
+      getSettings: function () {
+        // TODO Return settings object from form values.
+        return {
+          hjid: Number(document.getElementById('hjid').value)
+        };
+      },
+
+      validate: function () {
+        // TODO Return whether settings are valid.
+        var hjidField = document.getElementById('hjid');
+        var hjid = Number(hjidField.value);
+        hjidField.invalid = isNaN(hjid) || hjid < 1;
+        return !hjidField.invalid;
+      }
+    });
+  </script>
+</body>
+
 </html>
