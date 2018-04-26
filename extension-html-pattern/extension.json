@@ -1,0 +1,30 @@
+{
+  "displayName": "Hotjar",
+  "name": "hotjar",
+  "version": "1.0.0",
+  "description": "Hotjar html example extension",
+  "author": {
+    "name": "Summit"
+  },
+  "viewBasePath": "src/view/",
+  "configuration": {
+    "viewPath": "configuration/configuration.html",
+    "schema": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "properties": {}
+    }
+  },
+  "actions": [
+    {
+      "displayName": "Load Hotjar Code",
+      "name": "load-hotjar-code",
+      "libPath": "src/lib/actions/loadHotjarCode.js",
+      "schema": {
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "type": "object",
+        "properties": {}
+      }
+    }
+  ]
+}
